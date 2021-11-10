@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Package'){
             when{
-            bracnh 'master'
+            branch 'master'
             changeset "**/worker/**" 
             }
             steps{
